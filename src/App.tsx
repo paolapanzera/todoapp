@@ -10,9 +10,9 @@ const App: React.FC  = () => {
   return (
     <div className="app">
       <h1 className="title">#todo</h1>
-      <button onClick={() => setTab('All')}>All</button>
-      <button onClick={() => setTab('Active')}>Active</button>
-      <button onClick={() => setTab('Completed')}>Completed</button>
+      <button className="btnTab" onClick={() => setTab('All')}>All</button>
+      <button className="btnTab" onClick={() => setTab('Active')}>Active</button>
+      <button className="btnTab" onClick={() => setTab('Completed')}>Completed</button>
 
       { tab === 'All' && <All /> }
       { tab === 'Active' && <Active /> }

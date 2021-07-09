@@ -1,0 +1,90 @@
+.app {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60.8rem;
+
+    .title {
+        font-family: "Raleway Bold", sans-serif;
+        font-size: 3.6rem;
+        text-align: center;
+    }
+
+    .btnTab {
+        font-family: "Montserrat Medium";
+        font-size: 1.4rem;
+        background-color: transparent;
+        border: 0;
+        padding-bottom: 1.6rem;
+        width: 9rem;
+        text-align: center;
+    }
+
+    .containerBtnTabs {
+        margin-top: 6.0rem;
+        border-bottom: 1px solid var(--color-light-gray);
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.containerInput {
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+
+    .input {
+        border-radius: 1.2rem;
+        border: 1px solid var(--color-light-gray);
+        padding: 2rem 1.2rem;
+        font-family: "Montserrat";
+        font-size: 1.4rem;
+        width: 80%;
+        outline: none;
+    }
+
+    .btn {
+        background-color: var(--color-secondary);
+        border: 0;
+        border-radius: 1.2rem;
+        width: 10rem;
+        padding: 2rem 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        span {
+            color: var(--color-white);
+            font-family: "Montserrat SemiBold";
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.list {
+    margin-top: var(--space-4);
+
+    .itemList {
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.7rem;
+
+        span {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.8rem;
+        }
+
+        .inputItemList {
+            width: var(--space-3);
+            height: var(--space-3);
+            margin-right: var(--space-1);
+        }
+
+        input.inputItemList:checked+span {
+            text-decoration: line-through;
+        }
+    }
+}

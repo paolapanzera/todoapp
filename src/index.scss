@@ -13,29 +13,3 @@ html {
 body {
   font-size: var(--space-2);
 }
-
-.title {
-  font-family: "Raleway Bold", sans-serif;
-  font-size: 3.6rem;
-  text-align: center;
-}
-
-.app {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 60.8rem;
-}
-
-.btnTab {
-  font-family: "Montserrat Medium";
-  font-size: 1.4rem;
-  background-color: transparent;
-  border: 0;
-  padding-bottom: 1.6rem;
-}
-
-.containerBtnTabs {
-  border-bottom: 1px solid var(--color-light-gray);
-  display: flex;
-  justify-content: space-around;
-}

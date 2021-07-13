@@ -10,7 +10,7 @@ type TaskEntry = {
 const App: React.FC = () => {
   const [list, setList] = useState<TaskEntry[]>([]);
   const [value, setValue] = useState('');
-  const [filterState,setFilterState] = useState('all');
+  const [filterState, setFilterState] = useState('all');
 
 
   console.log(list)
@@ -79,9 +79,9 @@ const App: React.FC = () => {
     <div className="app">
       <h1 className="title">#todo</h1>
       <div className="containerBtnTabs">
-        <button className="btnTab" onClick={() => updateList('all')}>All</button>
-        <button className="btnTab" onClick={() => updateList('active')}>Active</button>
-        <button className="btnTab" onClick={() => updateList('completed')}>Completed</button>
+        <button className="btnTab" onClick={() => setFilterState('all')}>All</button>
+        <button className="btnTab" onClick={() => setFilterState('active')}>Active</button>
+        <button className="btnTab" onClick={() => setFilterState('completed')}>Completed</button>
       </div>
       <div className="containerInput">
         <input 
@@ -95,7 +95,7 @@ const App: React.FC = () => {
       </div>
       <div className="list">
         {
-          list && list.filter(updateList(filterState).map((item, index) => {
+          list && updateList(filterState).map((item, index) => {
             return (
               <div className="itemList" key={index}>
                 <input
@@ -105,7 +105,7 @@ const App: React.FC = () => {
               onChange={() => handleChangeCheckbox(item.id)}
             /><span>{item.title}</span></div>
             )
-          }))
+          })
         }
       </div>
     </div>
